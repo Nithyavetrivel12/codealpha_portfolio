@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V. Nithya | Java Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(-45deg,#0f172a,#1e293b,#312e81,#0f172a);
+background-size:400% 400%;
+animation:gradientBG 10s ease infinite;
+color:white;
+}
+
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+background:rgba(0,0,0,.3);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+section{
+padding:100px 10%;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:4rem;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero h2{
+margin-top:10px;
+font-size:2rem;
+}
+
+.hero p{
+max-width:800px;
+margin:20px auto;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+font-weight:600;
+text-decoration:none;
+border-radius:10px;
+margin-top:15px;
+}
+
+.title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:25px;
+border-radius:20px;
+margin-bottom:20px;
+border:1px solid rgba(255,255,255,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.skill{
+background:rgba(255,255,255,.08);
+padding:20px;
+border-radius:15px;
+}
+
+.bar{
+height:10px;
+background:#1e293b;
+border-radius:20px;
+overflow:hidden;
+margin-top:10px;
+}
+
+.progress{
+height:100%;
+background:#38bdf8;
+}
+
+.project{
+background:rgba(255,255,255,.08);
+padding:20px;
+border-radius:20px;
+}
+
+.project h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,.2);
+}
+
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.hero h2{
+font-size:1.3rem;
+}
+
+nav ul{
+display:none;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">V.Nithya</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#achievements">Achievements</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Hi, I'm <span>V. Nithya</span></h1>
+
+<h2 id="typing"></h2>
+
+<p>
+🥈 NPTEL Silver Medalist in Java Programming |
+Web Development Intern |
+Certified in Python, JavaScript & Cybersecurity
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+
+</div>
+
+</section>
+
+<section id="about" class="reveal">
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+
+<p>
+Computer Science and Engineering student with a strong foundation in Java development, software engineering, and database management. Awarded the NPTEL Silver Medal in Java Programming and successfully completed a Web Development Internship at NextGen Software Solutions. Passionate about building scalable applications, solving real-world problems, and continuously improving technical expertise through projects and certifications.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills" class="reveal">
+
+<h2 class="title">Skills</h2>
+
+<div class="grid">
+
+<div class="skill">
+Java
+<div class="bar"><div class="progress" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+MySQL
+<div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+Python
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+JavaScript
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+HTML & CSS
+<div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+GitHub
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="experience" class="reveal">
+
+<h2 class="title">Experience</h2>
+
+<div class="card">
+
+<h3>Web Development Intern</h3>
+
+<p><b>NextGen Software Solutions</b></p>
+
+<br>
+
+<p>• Developed responsive web interfaces.</p>
+<p>• Worked with HTML, CSS and JavaScript.</p>
+<p>• Participated in real-world project development.</p>
+<p>• Improved software development workflow knowledge.</p>
+
+</div>
+
+</section>
+
+<section id="projects" class="reveal">
+
+<h2 class="title">Projects</h2>
+
+<div class="grid">
+
+<div class="project">
+<h3>Real-Time Human Health Monitoring System</h3>
+<p>
+Designed a system for monitoring and analyzing health-related parameters in real time.
+</p>
+</div>
+
+<div class="project">
+<h3>Student Management System</h3>
+<p>
+Java-based application for managing student records efficiently using database integration.
+</p>
+</div>
+
+<div class="project">
+<h3>Calculator Application</h3>
+<p>
+Responsive calculator developed using HTML, CSS and JavaScript.
+</p>
+</div>
+
+<div class="project">
+<h3>Image Gallery Website</h3>
+<p>
+Interactive image gallery with modern UI and responsive design.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="achievements" class="reveal">
+
+<h2 class="title">Achievements & Certifications</h2>
+
+<div class="card">
+🥈 <b>NPTEL Silver Medal</b><br>
+Java Programming Certification with Silver Elite Performance.
+</div>
+
+<div class="card">
+🏆 <b>NextGen Software Solutions</b><br>
+Successfully completed Web Development Internship.
+</div>
+
+<div class="card">
+🏆 <b>HP LIFE</b><br>
+Cybersecurity Certification.
+</div>
+
+<div class="card">
+🏆 <b>Besant Technologies</b><br>
+Python Programming Certification.
+</div>
+
+<div class="card">
+🏆 <b>Udemy</b><br>
+JavaScript Programming Certification.
+</div>
+
+</section>
+
+<section id="contact" class="reveal">
+
+<h2 class="title">Contact</h2>
+
+<div class="card">
+
+<p>📧 amarnathnithya0@gmail.com</p>
+<p>📱 8056859305</p>
+<p>📍 Cuddalore, Tamil Nadu</p>
+<p>💼 Aspiring Java Developer</p>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 V. Nithya | Java Developer Portfolio</p>
+</footer>
+
+<script>
+
+const text="Aspiring Java Developer";
+let i=0;
+
+function typing(){
+
+if(i<text.length){
+
+document.getElementById("typing").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(typing,100);
+
+}
+
+}
+
+typing();
+
+function reveal(){
+
+var reveals=document.querySelectorAll(".reveal");
+
+for(var i=0;i<reveals.length;i++){
+
+var windowHeight=window.innerHeight;
+
+var elementTop=reveals[i].getBoundingClientRect().top;
+
+if(elementTop<windowHeight-100){
+
+reveals[i].classList.add("active");
+
+}
+
+}
+
+}
+
+window.addEventListener("scroll",reveal);
+
+reveal();
+
+</script>
+
+</body>
+</html>
